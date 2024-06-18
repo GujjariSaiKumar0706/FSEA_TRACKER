@@ -1,0 +1,45 @@
+.signupmain {
+    width: 35%;
+    min-width: 300px; /* Ensures the form does not get too narrow on small screens */
+    background-color: #ffffff;
+    padding: 2rem;
+  }
+.formmain{
+    margin-top: 8em;
+}
+.button-reg {
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    color: white;
+    background: linear-gradient(to top, #257df8, #388cff, #2e86ff, #2380ff, #1775f0);
+    border: none;
+    border-radius: 0.75em; /* Adjusted border-radius for responsiveness */
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.1); /* Adjusted box-shadow for responsiveness */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.pass-wrapper {
+    position: relative;
+    display: flex;
+  }
+  
+  i {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+  }
+
+@media (max-width: 768px) {
+    .button-reg {
+        padding: 0.5em 1em; /* Adjusted padding for smaller screens */
+        font-size: 0.875em; /* Adjusted font-size for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .button-reg {
+        padding: 0.375em 0.75em; /* Further adjusted padding for even smaller screens */
+        font-size: 0.75em; /* Further adjusted font-size for even smaller screens */
+    }
+}

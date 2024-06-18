@@ -1,0 +1,91 @@
+/* Sidebar.css */
+.sidebar {
+    z-index: 5;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: width 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Adjusted to prevent nav items from being pushed too far down */
+  }
+  
+  .sidebar.closed {
+    width: 0;
+  }
+  
+  .sidebar.open {
+    width: 250px;
+  }
+  
+  .close-icon {
+    background-color: #111;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .close-icon:hover {
+    color: #ccc; /* Change the color on hover if desired */
+  }
+  
+  .sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px; /* Adjusted to provide space between close button and nav items */
+  }
+  
+  .sidebar nav ul li {
+    padding: 8px 16px;
+  }
+  
+  .sidebar nav ul li a {
+    color: #818181;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    transition: color 0.3s;
+  }
+  
+  .sidebar nav ul li a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar nav ul li a.active-link {
+    color: #1E90FF;
+  }
+  
+  .profile-button {
+    background-color: #111;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+    transition: background-color 0.3s;
+  }
+  
+  .profile-button:hover {
+    background-color: #575757;
+  }
+  
+  .profile-button .nav-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 8px 16px;
+  }
+  
+  .profile-button .nav-link:hover {
+    color: #f1f1f1;
+  }
+  

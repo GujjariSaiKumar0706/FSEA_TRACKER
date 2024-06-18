@@ -1,0 +1,93 @@
+.faculty1{
+    height: 11rem;
+}
+
+.faculty-card {
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    overflow: hidden; /* Ensure the shiny effect doesn't overflow the card */
+    
+}
+
+.faculty-card::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, #007bff, #00ffea, #007bff, #00ffea);
+    background-size: 400% 400%;
+    animation: shiny-border 3s linear infinite;
+    z-index: 1;
+    filter: blur(8px);
+}
+
+.faculty-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    border-radius: 8px;
+    z-index: 2;
+}
+
+.card-body {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    padding: 20px; /* Adjusted padding to avoid content overflow */
+    background: #fff; /* Ensure background is white */
+}
+
+.title-cov .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 1rem;
+}
+
+.links {
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+    background: #007bff;
+    transition: background 0.2s;
+}
+
+.link:hover {
+    background: #0056b3;
+}
+
+@keyframes shiny-border {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

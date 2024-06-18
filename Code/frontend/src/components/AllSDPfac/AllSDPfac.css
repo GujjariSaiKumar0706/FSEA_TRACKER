@@ -1,0 +1,39 @@
+.textfield {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.textfieldbar {
+    width: 40rem;
+    height: 3.5rem;
+    border-radius: 4px;
+    padding-left: 1rem;
+    border: 2px solid #007bff; /* Blue border */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+.textfieldbar:focus {
+    outline: none;
+    border-color: #0056b3; /* Darker blue on focus */
+}
+
+.allsdp input[type=text]::placeholder {
+    padding-left: 0.5rem;
+    color: #aaa; /* Placeholder text color */
+}
+
+.but {
+    background-color: #007bff; /* Blue background */
+    width: 5rem;
+    border-radius: 8px;
+    height: 3.5rem;
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.but:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

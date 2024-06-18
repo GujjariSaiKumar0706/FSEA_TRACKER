@@ -1,0 +1,80 @@
+###
+//faculty registering
+post http://localhost:4000/faculty-api/new-faculty
+Content-Type: application/json
+
+{
+    "userType":"faculty",
+    "facultyId":"22071A0564",
+    "username":"Y Saketh",
+    "password":"12345678",
+    "email":"abhishek@mail.com",
+    "phone":"9534569871"
+}
+###
+//faculty login
+post http://localhost:4000/faculty-api/login
+Content-Type: application/json
+
+{
+    "facultyId":"550",
+    "password":"Rushendra23"
+}
+
+###
+post http://localhost:4000/faculty-api/change-password
+Content-Type: application/json
+
+{
+    "facultyId":"550",
+    "password":"Rushendra",
+    "newPassword":"Rushendra"
+}
+// upload faculty sdp data
+###
+POST http://localhost:4000/faculty-api/sdpdata
+Content-Type: application/json
+
+{
+    "sdpId":"{{$timestamp}}",
+    "facultyId":"22071A6621",
+    "title":"Blockchain Revolution",
+    "topic":"Blockchain technology,cryptography",
+    "startDate":"2023-01-20",
+    "endDate":"2023-01-20",
+    "organizedBy":"VNRVJIET",
+    "dateOfCreation":"{{$datetime iso8601}}",
+    "dateOfModification":"{{$datetime iso8601}}",
+    "status":true
+}
+
+
+###
+// upload faculty review data
+
+POST http://localhost:4000/faculty-api/reviewdata
+Content-Type: application/json
+
+{
+    "revId":"{{$timestamp}}",
+    "facultyId":"22071A6621",
+    "title":"Functions of AI",
+    "roles":["Reviewer","Subject Expert"],
+    "startDate":"",
+    "endDate":"",
+    "organizedBy":"",
+    "dateOfCreation":"{{$datetime iso8601}}",
+    "dateOfModification":"{{$datetime iso8601}}",
+    "status":true
+}
+
+
+###
+// get sdp data
+
+GET http://localhost:4000/faculty-api/sdpdata/2071A5673
+
+###
+// get review data
+
+GET http://localhost:4000/faculty-api/reviewdata/2071A5673

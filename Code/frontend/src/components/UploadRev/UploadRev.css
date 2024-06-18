@@ -1,0 +1,53 @@
+.urform {
+    width: 60%;
+    min-width: 300px;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+.role-options .form-check {
+    margin-bottom: 10px;
+}
+
+.upload-review-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.upload-review-form input[type="text"],
+.upload-review-form input[type="date"],
+.upload-review-form input[type="file"] {
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white; /* Set default background color */
+}
+
+.upload-review-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.upload-review-form button:hover {
+    background-color: #0056b3;
+}
+
+.upload-review-form .error {
+    color: red;
+    font-size: 0.875em;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .upload-review-form {
+        padding: 1rem;
+    }
+}
+
+

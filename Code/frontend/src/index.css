@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+:root{
+  --light-grey:#f1f2f3;
+  --medium-grey:#d3d1d1;
+  --light-dark-grey:#808080;
+  --crimson:#dc143c;
+  --light-olive:#bcb88a;
+  --dark-green:#556b2f;
+  --main-yellow:inear-gradient(to right, red, yellow);
+  --light-green:#badf68;
+  --light-red:#ff8484;
+}
+body {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

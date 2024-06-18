@@ -1,0 +1,24 @@
+### Test POST /upload
+POST http://localhost:4000/file-api/upload-certificate
+Content-Type: multipart/form-data
+
+file: /Users/kay/Downloads/certi.jpg
+
+### Test POST /upload
+POST http://localhost:4000/file-api/upload-certificate
+Content-Type: multipart/form-data
+
+--boundary
+Content-Disposition: form-data; name="file"; filename="certi.jpg"
+Content-Type: image/jpg
+
+/Users/kay/Downloads/certi.jpg
+--boundary--
+
+### Test GET /files/:filename
+GET http://localhost:4000/file-api/get-certificate/certi.jpg
+###
+GET http://localhost:4000/file-api/get-certificates
+
+
+

@@ -1,0 +1,56 @@
+.upsmain {
+    background-color: #ffffff;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.sdpForm {
+    width: 60%;
+    min-width: 300px;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+.upsmain h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.upsmain .form-group {
+    margin-bottom: 15px;
+}
+
+.upsmain label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.upsmain input[type="text"],
+.upsmain input[type="date"],
+.upsmain input[type="file"] {
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.upsmain button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.upsmain button:hover {
+    background-color: #0056b3;
+}
+
+.upsmain .error {
+    color: red;
+    font-size: 0.875em;
+    margin-top: 5px;
+}

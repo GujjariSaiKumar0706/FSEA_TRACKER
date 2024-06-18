@@ -1,0 +1,44 @@
+###
+
+
+post http://localhost:4000/admin-api/new-admin
+Content-Type: application/json
+
+{
+    "adminId":"001",
+    "facultyId":"22071A0523",
+    "username":"G Sai Kumar",
+    "password":"saikumar123",
+    "email":"sai@mail.com",
+    "phone":"7993945097"
+}
+
+###
+post http://localhost:4000/admin-api/login
+Content-Type: application/json
+
+{
+    "facultyId":"519",
+    "username":"rohit",
+    "password":"Rohit Sharma"
+}
+
+###
+post http://localhost:4000/admin-api/change-password
+Content-Type: application/json
+
+{
+    "facultyId":"519",
+    "password":"Rohit",
+    "newPassword":"Rohit Sharma"
+}
+###
+GET http://localhost:4000/admin-api/get-sdp-records
+###
+GET http://localhost:4000/admin-api/get-sdp-records/22071A6621
+###
+GET http://localhost:4000/admin-api/get-review-records
+###
+GET http://localhost:4000/admin-api/get-review-records/22A1578
+###
+GET http://localhost:4000/admin-api/get-all-faculty-records

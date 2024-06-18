@@ -1,0 +1,34 @@
+.welcome {
+    background: linear-gradient(135deg, #add8e6, #87ceeb);
+    color: white;
+    height: 14rem;
+}
+.pie{
+    height: 14rem;
+}
+.chart, .card {
+    background-color: #fff;
+}
+
+.card {
+    background-color: #f8f9fa;
+}
+
+.card-content h3 {
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .welcome {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    .chart, .card {
+        padding: 10px;
+    }
+}
